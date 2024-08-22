@@ -1,0 +1,18 @@
+vaadin:
+  launch-browser: 'true'
+logging:
+  level:
+    org:
+      atmosphere: warn
+server:
+  port: ${PORT:8080}
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@sandbox_high?TNS_ADMIN=/opt/oracle/cloud/sandbox
+    username: gcc180
+    password: gV9yG74iog6Z
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
