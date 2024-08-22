@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           architecture: x64
       - name: Build WAR Package
-        run: mvn clean package -P production
+        run: mvn -B clean package -P production
       - name: Create Release
         id: create-release
         uses: actions/create-release@v1
