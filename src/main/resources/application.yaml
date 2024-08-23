@@ -9,10 +9,10 @@ server:
 
 spring:
   datasource:
-    url: jdbc:oracle:thin:@sandbox_high?TNS_ADMIN=/opt/oracle/cloud/sandbox
+    url: jdbc:postgresql://gcc180-rds.c3o6mguucr80.us-east-2.rds.amazonaws.com:5432/gcc180
     username: gcc180
     password: gV9yG74iog6Z
-    driver-class-name: oracle.jdbc.OracleDriver
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
